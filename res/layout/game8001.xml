@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="#FF1919" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="129dp"
+        android:layout_toRightOf="@+id/radioGroup1" >
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAnswer2001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Show Answer" 
+         android:background="#33b5e5"/>
+
+    <TextView
+        android:id="@+id/answer2001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAnswer2001"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="Answer = C: readability"
+        android:textSize="20sp"
+          android:textColor="#FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RadioButton
+            android:id="@+id/game81a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="A: names and numbers"
+            android:textColor="#FFCC00"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/game81b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B: spelling, grammar and punctuation" 
+            android:textColor="#FFCC00"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/game81c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C: readability"
+            android:textColor="#FFCC00"
+            android:onClick="onRadioButtonClicked" />
+         <RadioButton
+            android:id="@+id/game81d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D: format" 
+            android:textColor="#FFCC00"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="When proofreading a document, you should check all but which one of the following for errors?"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+          android:textColor="#FFFFFF" />
+
+</RelativeLayout>

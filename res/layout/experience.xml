@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FF1919"
+    >
+    
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="65dp"
+        android1:text="How experienced do you feel?"
+        android1:textSize="17sp"
+        android:gravity="center"
+        android1:textStyle="italic" 
+        android:textColor="#FFFFFF"/>
+    
+    <TextView
+        android1:id="@+id/lulz"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="19dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android1:text="Set Communication Experience Level"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#FFCC00"
+        android1:textStyle="bold" />
+
+    <TextView
+        android1:id="@+id/TextView01"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/textView1"
+        android1:layout_marginTop="19dp"
+        android:gravity="center"
+        android1:text="Play the &quot;Jeopardy&quot; game and determine your experience level based on your score"
+        android1:textSize="17sp" 
+        android:textColor="#FFFFFF"/>
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/TextView01"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="29dp" 
+        >
+
+        <RadioButton
+            android1:id="@+id/novice"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"            
+            android1:text="Novice (Got 1-4 Questions Correct)" 
+            android:onClick="onRadioButtonClicked"
+            android1:textColor="#FFCC00"/>
+
+        <RadioButton
+            android1:id="@+id/adequate"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Adequate (Got 4-8 Questions Correct)" 
+            android:onClick="onRadioButtonClicked"
+            android1:textColor="#FFCC00"/>
+
+        <RadioButton
+            android1:id="@+id/knowledgeable"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Knowledgeable (Got 8-12 Questions Correct)" 
+            android:onClick="onRadioButtonClicked"
+            android1:textColor="#FFCC00"/>
+
+        <RadioButton
+            android1:id="@+id/expert"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Expert (Got 12-16 Questions Correct)" 
+            android:onClick="onRadioButtonClicked"
+            android1:textColor="#FFCC00"/>
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/noviceText"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/numberScore"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="26dp"
+        android1:gravity="center"
+        android1:text="Experience Level = Novice"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#FFCC00"
+        android1:textSize="18sp"
+        android1:textStyle="bold"
+         />
+     <TextView
+        android1:id="@+id/adequateText"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/numberScore"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="26dp"
+        android1:gravity="center"
+        android1:text="Experience Level = Adequate"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#FFCC00"
+        android1:textSize="18sp"
+        android1:textStyle="bold"
+         />
+      <TextView
+        android1:id="@+id/knowledgeableText"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/numberScore"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="26dp"
+        android1:gravity="center"
+        android1:text="Experience Level = Knowledgeable"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#FFCC00"
+        android1:textSize="18sp"
+        android1:textStyle="bold"
+         />
+       <TextView
+        android1:id="@+id/expertText"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/numberScore"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginBottom="26dp"
+        android1:gravity="center"
+        android1:text="Experience Level = Expert"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#FFCC00"
+        android1:textSize="18sp"
+        android1:textStyle="bold"
+         />
+
+    <TextView
+        android1:id="@+id/numberScore"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentLeft="true"
+        android1:layout_marginBottom="21dp"
+        android1:gravity="center"
+        android1:text="Make sure to include your experience level when you post in the Facebook Group to request assistance for this topic!"
+        android1:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

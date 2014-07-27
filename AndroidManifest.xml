@@ -1,0 +1,69 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sabersoft.fblacommunication"
+    android:versionCode="6"
+    android:versionName="1.6" >
+
+  <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+      <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sabersoft.fblacommunication.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+   
+         <activity
+            android:name="com.sabersoft.fblacommunication.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name = ".HomeActivity"/>
+        <activity android:name = ".GameActivity"/>
+        <activity android:name = ".FacebookActivity"/>
+        <activity android:name = ".TestsActivity"/>
+        <activity android:name = ".ExperienceActivity"/>
+        <activity android:name = ".QuizletActivity"/>
+        <activity android:name = ".Game2001"/>
+        <activity android:name = ".Game2002"/>
+        <activity android:name = ".Game2003"/>
+        <activity android:name = ".Game2004"/>
+        <activity android:name = ".Game4001"/>
+        <activity android:name = ".Game4002"/>
+        <activity android:name = ".Game4003"/>
+        <activity android:name = ".Game4004"/>
+        <activity android:name = ".Game6001"/>
+        <activity android:name = ".Game6002"/>
+        <activity android:name = ".Game6003"/>
+        <activity android:name = ".Game6004"/>
+        <activity android:name = ".Game8001"/>
+        <activity android:name = ".Game8002"/>
+        <activity android:name = ".Game8003"/>
+        <activity android:name = ".Game8004"/>
+        <activity android:name = ".PlayStore"/>
+        <activity android:name = ".HelpActivity"/>
+        
+        
+        
+        
+         
+        
+      
+       
+    </application>
+
+</manifest>
